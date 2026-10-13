@@ -1,0 +1,24 @@
+{
+  "name": "ats-jobs-mcp",
+  "version": "0.1.0",
+  "description": "Serveur MCP : offres d'emploi publiques d'une entreprise depuis son ATS (Greenhouse, Lever, Ashby, Recruitee, Workable, SmartRecruiters, Teamtailor, Personio), détection de l'ATS et hiring signals.",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "ats-jobs-mcp": "src/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "undici": "^7.30.0",
+    "zod": "^4.6.7"
+  }
+}
